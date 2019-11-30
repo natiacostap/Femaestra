@@ -5,6 +5,7 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.css'
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
+import './font/style.css'
 
 ReactDOM.render(<BrowserRouter basename ="/femaestra/"><App /></BrowserRouter>, document.getElementById('root'));
 
