@@ -25,8 +25,6 @@ const styleTitle = {
     fontWeight: 'bold',
     paddingTop: 10,
     paddingBottom: 10
-
-
 }
 
 
