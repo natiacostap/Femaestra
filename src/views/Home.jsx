@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Buttons from '../components/Buttons.jsx'
-import '../font/PostNoBillsJaffna-Regular.woff'
 
 
 const logoStyle = {
@@ -11,9 +10,11 @@ const logoStyle = {
 }
 const titleStyle = {
     textAlign : 'center',
-    color: '#438B31',
+    color: '#53AA3E',
     fontFamily: "Post No Bills Jaffna Bold",
-    fontSize: 50
+    fontSize: 50,
+    fontWeight: 'bold',
+    marginTop: '-5%',
 }
 
 const subTitle = {
@@ -45,10 +46,14 @@ class Home extends Component {
                     <img className='img-fluid' style={logoStyle} src={require('../img/amigas.png')}></img>
                     <h1 style={titleStyle}>FEMAESTRA</h1>
                     <h5 style={subTitle} >mujeres para mujeres</h5>
-                    <div style={{paddingTop: 5}}>
+                    <div style={{paddingTop: 5}} className=' row justify-content-center'>
                         <Link className="link"  to="/buscar"> <Buttons style={buttonStyle} title={'Buscar'}/> </Link>
                         <Link className="link"  to="/ofrecer"> <Buttons style={buttonStyle} title={'Ofrecer'}/> </Link>
-                        <Link className="link"  to="/eventos"> <Buttons style={buttonStyle} title={'Eventos'}/> </Link>
+                        <Link className="link"  to="/eventos"> <Buttons style={buttonStyle} title={'Talleres'}/> </Link>
+                    </div>
+                    <div className='row justify-content-center' style={{paddingTop: 10}}> 
+                   
+                        <a style={{color: '#53AA3E'}}>Crear cuenta</a>
                     </div>
                 </div>
             </React.Fragment>

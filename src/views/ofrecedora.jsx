@@ -6,16 +6,17 @@ import Navbar from '../components/Navbar.jsx'
 
 const buttonStyle = {
    
-    backgroundColor: '#9d47f2',
+    background: 'linear-gradient(180deg, #A944E8 0%, rgba(255, 255, 255, 0) 100%), #681A98',
     borderColor: '#9d47f2',
-    width: '25%',
+    width: '28%',
     height:'10%',
     borderRadius: 28,
     color: '#fff',
     fontWeigth: 'bold',
     fontSize: 13,
     marginBottom: 20,
-    marginRight: 8
+    marginRight: 8,
+    fontFamily: "Post No Bills Jaffna Bold",
 }
 
 
