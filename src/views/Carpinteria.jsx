@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Navbar.jsx'
 import { Link } from 'react-router-dom';
+import Buttons from '../components/Buttons.jsx'
 
 
 const buttonStyle = {
-    paddingTop: 25,
-    paddingBottom: 25,
+    padding: 5,
     backgroundColor: '#9d47f2',
     borderColor: '#9d47f2',
-    width: '45%',
+    width: '100%',
     borderRadius: 28,
     color: '#fff',
     fontWeigth: 'bold',
     fontSize: 22,
-    marginBottom: 20,
-    marginRight: 8
+    marginBottom: 5
 }
 
 const styleTitle = {
@@ -25,7 +24,7 @@ const styleTitle = {
 
 
 
-class Electricidad extends Component {
+class Carpinteria extends Component {
     render(){
         return(
             <React.Fragment>
@@ -35,6 +34,7 @@ class Electricidad extends Component {
                     <div className='row'> 
                         <div> 
                             <h1>Hola</h1>
+                            <Link className="link"  to="/ofrecedora">  <Buttons style={buttonStyle} title={'Ver mas'}/></Link>
                            
                         </div>
                     </div>
@@ -43,5 +43,5 @@ class Electricidad extends Component {
         )
     }
 }
-export default Electricidad
+export default Carpinteria
 
