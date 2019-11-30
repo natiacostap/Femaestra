@@ -53,7 +53,7 @@ class Home extends Component {
                     </div>
                     <div className='row justify-content-center' style={{paddingTop: 10}}> 
                    
-                        <a style={{color: '#53AA3E'}}>Crear cuenta</a>
+                        <a style={{color:'#53AA3E'}}>Crear cuenta</a>
                     </div>
                 </div>
             </React.Fragment>

@@ -3,23 +3,14 @@ import Navbar from '../components/Navbar.jsx'
 import Cards from '../components/cardsCarpinteria.jsx'
 
 
-const styleTitle = {
-    textAlign: 'center',
-    color: 'black',
-    marginTop:'7%'
-
-}
 
 const styleTitle2 = {
     textAlign: 'center',
     color: 'green',
     marginTop:'5%',
-    marginBottom :'3%'
-
+    marginBottom :'3%',
+    fontFamily: "Post No Bills Jaffna Regular",
 }
-
-
-
 
 
 class Carpinteria extends Component {
@@ -29,8 +20,7 @@ class Carpinteria extends Component {
                   <Navbar/>
                   <div className='container' > 
                   <div className="tittlecarpinteria">
-                  <h4 style={styleTitle}>Resultados</h4>
-                    <h5 style={styleTitle2}>Oficios > Electricidad</h5>
+                    <h5 style={styleTitle2}>Oficios > Carpintería</h5>
                     </div>
                     
                     <div className='row'> 
