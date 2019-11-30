@@ -12,7 +12,7 @@ const body = {
     padding : '4%'
 }
 const styleText = {
-    fontSize : '90%'
+    fontSize : '97%'
 }
 
 const buttonStyle = {

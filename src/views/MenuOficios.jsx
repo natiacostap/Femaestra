@@ -28,7 +28,6 @@ const styleTitle = {
 }
 
 
-
 class MenuOficios extends Component {
     render(){
         return(
