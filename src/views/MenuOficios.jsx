@@ -5,23 +5,26 @@ import Buttons from '../components/Buttons.jsx'
 
 
 const buttonStyle = {
-    paddingTop: 25,
-    paddingBottom: 25,
-    backgroundColor: '#9d47f2',
-    borderColor: '#9d47f2',
-    width: '45%',
+    background: 'linear-gradient(180deg, #A944E8 0%, rgba(255, 255, 255, 0) 100%), #681A98',
+    width: 160,
+    height: 80,
     borderRadius: 28,
     color: '#fff',
     fontWeigth: 'bold',
-    fontSize: 22,
+    fontSize: 26,
     marginBottom: 20,
-    marginRight: 8
-}
+    marginRight: 8,
+    fontFamily: "Post No Bills Jaffna Bold",
+   }
 
 const styleTitle = {
     textAlign: 'center',
-    color: 'green',
-
+    color: '#53AA3E',
+    fontFamily: "Post No Bills Jaffna Bold",
+    fontSize: 38,
+    fontWeight: 'bold',
+    paddingTop: 10,
+    paddingBottom: 10
 }
 
 
@@ -31,19 +34,18 @@ class MenuOficios extends Component {
         return(
             <React.Fragment>
                   <Navbar/>
-                  <div className='container'> 
+               
                     <h1 style={styleTitle}>Oficios</h1>
-                    <div className='row'> 
-                        <div> 
+                    <div className='container'> 
+                    <div className='row justify-content-center'> 
                             <Link className="link"  to="/carpinteria"><Buttons style={buttonStyle} title={'Electricidad'}/></Link>
-                            <Link className="link"  to="/construccion"><Buttons style={buttonStyle} title={'Consturcción'}/></Link>
-                            <Link className="link"  to="/gastiferia"><Buttons style={buttonStyle} title={'Gastiferia'}/></Link>
-                            <Link className="link"  to="/automovil"><Buttons style={buttonStyle} title={'Automóvil'}/></Link>
+                            <Link className="link"  to="/construccion"><Buttons style={buttonStyle} title={'Construcción'}/></Link>
+                            <Link className="link"  to="/gastiferia"><Buttons style={buttonStyle} title={'Gastifería'}/></Link>
+                            <Link className="link"  to="/automovil"><Buttons style={buttonStyle} title={'Automotriz'}/></Link>
                             <Link className="link"  to="/soporte"><Buttons style={buttonStyle} title={'Soporte '}/></Link>
-                            <Link className="link"  to="/pisos"><Buttons style={buttonStyle} title={'Pisos'}/></Link>
-                            <Link className="link"  to="/jardineria"><Buttons style={buttonStyle} title={'Jardineria'}/></Link>
-                            <Link className="link"  to="/electricidad"><Buttons style={buttonStyle} title={'Carpinteria'}/></Link>
-                        </div>
+                            <Link className="link"  to="/pisos"><Buttons style={buttonStyle} title={'Pintura'}/></Link>
+                            <Link className="link"  to="/jardineria"><Buttons style={buttonStyle} title={'Jardinería'}/></Link>
+                            <Link className="link"  to="/electricidad"><Buttons style={buttonStyle} title={'Carpintería'}/></Link>
                     </div>
                 </div>
             </React.Fragment>
