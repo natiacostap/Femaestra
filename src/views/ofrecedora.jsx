@@ -1,41 +1,35 @@
 import Buttons from '../components/Buttons.jsx'
 import React, { Component } from 'react';
-
 import Navbar from '../components/Navbar.jsx'
 
 
 const buttonStyle = {
-   
     background: 'linear-gradient(180deg, #A944E8 0%, rgba(255, 255, 255, 0) 100%), #681A98',
     borderColor: '#9d47f2',
-    width: '28%',
-    height:'10%',
+    width: 150,
+    height:80,
     borderRadius: 28,
     color: '#fff',
     fontWeigth: 'bold',
-    fontSize: 13,
-    marginBottom: 20,
-    marginRight: 8,
+    fontSize: 24,
+    marginBottom: 10,
+    marginRight: 5,
     fontFamily: "Post No Bills Jaffna Bold",
 }
 
 
 const photo = {
-
     width: '50%',
-    higth: 'auto'
+    higth: 'auto',
+    boxShadow: '-1px 0px 10px -3px #464646'
 }
 const datos = {
     color: '#A944E8',
-    fontFamily: "Post No Bills Jaffna Regular",
+    fontFamily: "Post No Bills Jaffna Bold",
     fontSize: 20,
-    marginLeft: '5%',
-    marginRigth: '5%'
+    
 }
-const cont = {
-    marginTop: '10%',
-    marginBottom: '10%'
-}
+
 const titleStyle = {
     textAlign: 'center',
     color: '#438B31',
@@ -48,22 +42,23 @@ class Ofrecedora extends Component {
         return (
             <React.Fragment>
                 <Navbar />
-
-                <div className="container " style={cont}>
-
-                    <div className="media">
-                        <img src={require('../img/carnet.jpeg')} style={photo} classame="align-self-center mr-3" alt="..." />
+                <div className="container" >
+                    <div className="media" style={{paddingTop:30, paddintBottom: 10}}>
+                        <img src={require('../img/carnet.jpeg')} style={photo} classame="align-self-center mr-3 img-fluid" alt="..." />
                         <div className="media-body">
                             <h5 style={titleStyle} className="mt-0">Antonia Zamorano Garcia</h5>
-
                         </div>
                     </div>
-                </div>
-                <div style={datos}>
-                    <h5>Comunas:La florida, Puente alto, Buin, Macul</h5>
-                    <h5>Descripcion:trabajo principalmente el reciclaje de muebles llevando a lo material la idea de mis clientas</h5>
-
-                </div>
+               
+              
+                    <div style={{paddingTop: 20, paddingBottom: 20}} className='row align-text-center'> 
+                        <div className='offset-1 col-10'> 
+                            <h4 style={datos}>Comunas</h4>
+                            <p>La Florida, Puente Alto, Buin, Macul</p>
+                            <h4 style={datos}>Descripcion</h4>
+                            <p>Trabajo principalmente el reciclaje de muebles llevando a lo material la idea de mis clientas</p>
+                         </div>
+                    </div>
                 
                 <div className="card-deck">
                     <div className="card">
@@ -91,12 +86,9 @@ class Ofrecedora extends Component {
                         </div>
                     </div>
                 </div>
-                <div className='container'>
-                <div className='rowy justify-content-center'>
-
-                    <Buttons style={buttonStyle} title={'certificaciones'} />
-                    <Buttons style={buttonStyle} title={'comentarios'} />
-                    <Buttons style={buttonStyle} title={'contactar'} />
+                <div className='row justify-content-center'>
+                    <Buttons style={buttonStyle} title={'Comentarios'} />
+                    <Buttons style={buttonStyle} title={'Contactar'} />
                 </div>
                 </div>
             </React.Fragment >
