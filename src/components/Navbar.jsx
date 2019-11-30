@@ -8,8 +8,8 @@ const styleNav = {
 }
 const shadow = {
     boxShadow: '-1px 0px 8px -5px #464646'
-   
 }
+
 
 class Navbar extends Component {
     render(){
@@ -22,10 +22,12 @@ class Navbar extends Component {
             </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <a className="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                            <a className="nav-item nav-link" href="#">Features</a>
-                            <a className="nav-item nav-link" href="#">Pricing</a>
-                            <a classNAme="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a className="nav-item nav-link" href="#">Buscar</a>
+                            <a className="nav-item nav-link" href="#">Ofrecer</a>
+                            <a className="nav-item nav-link" href="#">Talleres</a>
+                            <a className="nav-item nav-link" style={{color: '#53AA3E'}} href="#">Mi cuenta</a>
+
+
                         </div>
                     </div>
                 </nav>
