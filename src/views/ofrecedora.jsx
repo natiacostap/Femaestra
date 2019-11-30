@@ -43,7 +43,7 @@ class Ofrecedora extends Component {
 </div> 
 <div style={datos}>
     <h5>Comunas:La florida, Puente alto, Buin, Macul</h5>
-    <h5>Descripcion:trabajo principalmente el reciclaje de muebles llevando a lo material la idea de mis clientas</h5>
+    <h5>Descripcion:Trabajo principalmente el reciclaje de muebles llevando a lo material la idea de mis clientas</h5>
     <h5>telefono:+56987654321</h5>
     <h5>correo: antonia@gmail.com</h5>
 </div>
