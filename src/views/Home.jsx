@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Buttons from '../components/Buttons.jsx'
+import '../font/PostNoBillsJaffna-Regular.woff'
 
 
 const logoStyle = {
@@ -10,25 +11,28 @@ const logoStyle = {
 }
 const titleStyle = {
     textAlign : 'center',
-    fontWeight: 800,
-    color: '#551396',
+    color: '#438B31',
+    fontFamily: "Post No Bills Jaffna Bold",
+    fontSize: 50
 }
 
 const subTitle = {
     textAlign : 'center',
-    fontWeight: 900,
-    color: '#551396',
+    color: '#A944E8',
+    fontFamily: "Post No Bills Jaffna Regular",
+    marginTop: "-6%"
+
 }
 const buttonStyle = {
-    padding: 5,
-    backgroundColor: '#9d47f2',
-    borderColor: '#9d47f2',
-    width: '100%',
+    fontFamily: "Post No Bills Jaffna Bold",
+    background: 'linear-gradient(180deg, #A944E8 0%, rgba(255, 255, 255, 0) 100%), #681A98',
+    width: 250,
+    height:50,
     borderRadius: 28,
     color: '#fff',
     fontWeigth: 'bold',
     fontSize: 22,
-    marginBottom: 5
+    marginBottom: 5,
 }
 
 
@@ -41,7 +45,7 @@ class Home extends Component {
                     <img className='img-fluid' style={logoStyle} src={require('../img/amigas.png')}></img>
                     <h1 style={titleStyle}>FEMAESTRA</h1>
                     <h5 style={subTitle} >mujeres para mujeres</h5>
-                    <div style={{paddingTop: 10}}>
+                    <div style={{paddingTop: 5}}>
                         <Link className="link"  to="/buscar"> <Buttons style={buttonStyle} title={'Buscar'}/> </Link>
                         <Link className="link"  to="/ofrecer"> <Buttons style={buttonStyle} title={'Ofrecer'}/> </Link>
                         <Link className="link"  to="/eventos"> <Buttons style={buttonStyle} title={'Eventos'}/> </Link>
